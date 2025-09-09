@@ -1,0 +1,26 @@
+{
+  "name": "hardhat_duende",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "deploy:base": "hardhat run scripts/deploy-base.js --network base",
+    "deploy:base-sepolia": "hardhat run scripts/deploy-base.js --network base-sepolia",
+    "verify:base": "hardhat verify --network base",
+    "verify:base-sepolia": "hardhat verify --network base-sepolia"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "dotenv": "^17.2.2",
+    "hardhat": "^2.26.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
