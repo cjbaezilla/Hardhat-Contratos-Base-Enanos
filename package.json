@@ -8,6 +8,8 @@
     "test:gas": "REPORT_GAS=true hardhat test",
     "deploy:base": "hardhat run scripts/deploy-base.js --network base",
     "deploy:base-sepolia": "hardhat run scripts/deploy-base.js --network base-sepolia",
+    "deploy:dao": "hardhat run scripts/deploy-dao.js --network base-sepolia",
+    "deploy:dao:base": "hardhat run scripts/deploy-dao.js --network base",
     "verify:base": "hardhat verify --network base",
     "verify:base-sepolia": "hardhat verify --network base-sepolia"
   },
